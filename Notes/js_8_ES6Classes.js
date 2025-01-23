@@ -16,4 +16,4 @@ function ES6classes(){
     person1.greet();  // Output: Hello, my name is Alice.
     
 }
-ES6classes()
+// ES6classes()
