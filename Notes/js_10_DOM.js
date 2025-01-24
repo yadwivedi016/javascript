@@ -39,6 +39,41 @@ function dom(){
                     let content = collectionP[i].innerHTML;
                     console.log(content)
                 }
+            
+            //3. hasAttribute , hasAttribute, removeAttribute:
+                //hasAttribute and removeAttribute
+                    let click = document.getElementById("click");
+                    let attr = document.getElementById("six");
 
-}    
+                    console.log("\nby using hasAttribute :\n");
+                    console.log("attr.hasAttribute('hidden') : ",attr.hasAttribute('hidden'))
+                    click.addEventListener("click", () => {
+                        if (attr.hasAttribute("hidden")) {
+                            attr.removeAttribute("hidden"); // Removes the hidden attribute to make it visible
+                        } else {
+                            attr.setAttribute("hidden", ""); // Adds the hidden attribute to hide the element
+                            console.log("attr.hasAttribute('hidden') : ",attr.hasAttribute('hidden'))
+                        }
+                    });
+                
+                //hasAttributes
+                    let stro = document.getElementsByTagName("strong")
+                    console.log("\nby using hasAttributes :\n");
+                    console.log("strong tag hasAttributes",stro[0].hasAttributes())
+
+            //4. Event Listner:
+                    let element = document.getElementById("eight");
+                    element.addEventListener("mouseover",()=>{
+                        if(element.innerHTML === "Hey This is Javascript"){
+                            element.innerHTML = "Event Listner amazing right!!!"
+                        }
+                    })
+
+                    element.addEventListener("mouseout",()=>{
+                        if(element.innerHTML === "Event Listner amazing right!!!"){
+                            element.innerHTML = "Hey This is Javascript"
+                        }
+                    }) 
+                   
+ }
 dom()

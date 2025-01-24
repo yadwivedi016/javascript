@@ -5,3 +5,11 @@
 .five{
     color: green;
 }
+
+#seven{
+    border:black,solid,2px;
+    width: 150px;
+    height: 20;
+    padding: 3px;
+    margin: 2%;
+}
